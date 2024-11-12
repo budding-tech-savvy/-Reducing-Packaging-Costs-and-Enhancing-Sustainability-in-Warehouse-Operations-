@@ -5,7 +5,7 @@
 ![image](https://github.com/user-attachments/assets/b374f00d-0815-4640-a439-affc9c6ca831)
 ![image](https://github.com/user-attachments/assets/3122bae8-b7cf-4c15-bb42-5f66e7623256)
 
-[Download the Power BI Report (.pbix)](./path/to/your/report.pbix)
+[Download the Power BI Report (.pbix)](https://github.com/budding-tech-savvy/-Reducing-Packaging-Costs-and-Enhancing-Sustainability-in-Warehouse-Operations-/blob/main/Mom_reduction_in_cost.pbix)
 
 
 Here’s a complete step-by-step guide for a project, from MySQL data extraction to Power BI visualization. This example assumes you have a dataset related to monthly consumption data for various articles and want to visualize month-over-month reduction.
