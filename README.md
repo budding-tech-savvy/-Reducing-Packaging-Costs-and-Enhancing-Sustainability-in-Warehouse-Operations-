@@ -3,6 +3,7 @@
 **This project aims to reduce packaging costs in warehouse operations while aligning with sustainability goals. The initiative involves evaluating high-cost, environmentally unfriendly packaging materials currently in use, then transitioning to eco-friendly, cost-effective alternatives**.
 
 ![image](https://github.com/user-attachments/assets/b374f00d-0815-4640-a439-affc9c6ca831)
+![image](https://github.com/user-attachments/assets/3122bae8-b7cf-4c15-bb42-5f66e7623256)
 
 
 
