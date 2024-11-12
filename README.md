@@ -141,6 +141,21 @@ MoM_Percentage_Change_Column =
 MoM_Arrow = 
     IF('total_cost_%_change'[MoM_Percentage_Change_Column] > 0, "↑", 
        IF('total_cost_%_change'[MoM_Percentage_Change_Column] <0, "↓", "→"))
-
 ```
 
+```sql
+<!--Month-over-Month % change based on total average -->
+MoM_Percentage_Change_Column = 
+    VAR CurrentMonthAmount = avg_total_amount_table[avg_amount]
+    VAR PreviousMonthAmount = 
+        CALCULATE(
+            SUM(avg_total_amount_table[avg_amount]),
+            FILTER(
+                avg_total_amount_table,
+                MONTH(avg_total_amount_table[MonthAsDate]) = MONTH(EARLIER(avg_total_amount_table[MonthAsDate])) - 1 &&
+                YEAR(avg_total_amount_table[MonthAsDate]) = YEAR(EARLIER(avg_total_amount_table[MonthAsDate]))
+            )
+        )
+    RETURN 
+        IF(ISBLANK(PreviousMonthAmount), 0, (CurrentMonthAmount - PreviousMonthAmount) / PreviousMonthAmount )
+```
