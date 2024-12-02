@@ -72,8 +72,6 @@ ORDER BY
 **Explanation**: This query groups consumption data by article and month, summing up consumption_units and consumption_cost.
 Result: The output will have each article's monthly data for the past six months.
 
-**Export Data to CSV**
-After running the query, export the results to a CSV file (or directly connect MySQL to Power BI if possible).
 
 # Step 3: Load Data into Power BI
 Open Power BI Desktop.
